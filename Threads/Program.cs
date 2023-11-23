@@ -10,7 +10,6 @@ namespace Program
             Console.WriteLine("The examples of threads basics will be running now ....");
             Examples examples = new Examples();
             examples.runExamples();
-            // test
         }
     }
 }
