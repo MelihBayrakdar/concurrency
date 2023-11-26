@@ -30,15 +30,17 @@ _note: just for today ignore the **#todo** inside the code that ask you to write
 
 # Melih Bayrakdar Week 1
 
-1.
-1.  I chose Visual Studio Code (VSC) as the program. During the time VSC had [36 threads](vscThreads.png) running.
-1.  I opened several youtube.com tabs and the amount of threads grew every time I opened a new tab. Strangely enough, after a while the amount of threads kept lowering while having the same tabs open. [These threads](safariThreads.png) belong to Safari, where Brightspace, Github, and 6 Youtube tabs are open.
+1. .
+   1.  I chose Visual Studio Code (VSC) as the program. During the time VSC had [36 threads](vscThreads.png) running.
+   2.  I opened several youtube.com tabs and the amount of threads grew every time I opened a new tab. Strangely enough, after a while the amount of threads kept lowering while having the same tabs open. [These threads](safariThreads.png) belong to Safari, where Brightspace, Github, and 6 Youtube tabs are open.
     The list:
-1.  Thread 79264: This thread is named 'JavaScriptCore libpas scavenger', which works as a scavenger.
-1.  Thread 4926: The name contains 'private'. I'm guessing this thread holds control over the private way of browsing (incognito mode).
-1.  Thread 4726: This thread is called 'NSEventThread'.
-1.  Thread 3980: This thread contains 'coreanimation' and then 'render-server'. I don't have any knowledge on this type of threads, but I suppose they're rendering something.
-1.  Thread 79266: This thread is somewhat empty. It has been made when I opened a new tab of Youtube. There is a great chance this thread is now non-existent (see 2.).
-1.  Not done yet.
-1.  1.  Went over the two links and got a simple understanding of merge sort.
-    2.  1. [This code](merge.png) is merging subarrays back into the array. The method checks multiple things: first if the array is empty. If so, the k index of the original array (input) will be replaced with either leftArray's and rightArray's i or j index. (I need to say that I couldn't get the entire grasp of the method, but I will take a thorough look again and try to understand what's entirely going on). Besides checking if the a subarray is empty, it also checks if an index of a subarray is less or more than an index of the other subarray.
+      1.  Thread 79264: This thread is named 'JavaScriptCore libpas scavenger', which works as a scavenger.
+      2.  Thread 4926: The name contains 'private'. I'm guessing this thread holds control over the private way of browsing (incognito mode).
+      3.  Thread 4726: This thread is called 'NSEventThread'.
+      4.  Thread 3980: This thread contains 'coreanimation' and then 'render-server'. I don't have any knowledge on this type of threads, but I suppose they're rendering something.
+      5.  Thread 79266: This thread is somewhat empty. It has been made when I opened a new tab of Youtube. There is a great chance this thread is now non-existent (see 2.).
+   3.	Not done yet.
+2. . 
+	1.	Went over the two links and got a simple understanding of merge sort.
+	2.  .
+		1.	[This code](merge.png) is merging subarrays back into the array. The method checks multiple things: first if the array is empty. If so, the k index of the original array (input) will be replaced with either leftArray's and rightArray's i or j index. (I need to say that I couldn't get the entire grasp of the method, but I will take a thorough look again and try to understand what's entirely going on). Besides checking if the a subarray is empty, it also checks if an index of a subarray is less or more than an index of the other subarray.
