@@ -43,4 +43,7 @@ _note: just for today ignore the **#todo** inside the code that ask you to write
 2. . 
 	1.	Went over the two links and got a simple understanding of merge sort.
 	2.  .
-		1.	[This code](merge.png) is merging subarrays back into the array. The method checks multiple things: first if the array is empty. If so, the k index of the original array (input) will be replaced with either leftArray's and rightArray's i or j index. (I need to say that I couldn't get the entire grasp of the method, but I will take a thorough look again and try to understand what's entirely going on). Besides checking if the a subarray is empty, it also checks if an index of a subarray is less or more than an index of the other subarray.
+		1.	[This code](sortSeq.png) keeps on slicing the given array until right integer is not less than left integer. The merge function will then be called and 2 subarrays will be created [source](merge.png). The 2 subarrays will be merged in the array. In sortSeq() there is recursion: the rest of the slices will be merged into the array recursively.
+      2. I think by creating multiple threads and then assigning each slice to each thread. So thread 1 does first half of the array and thread 2 the second half of the array.
+      3. Well, merge sort is possible doing it simultaneously. I have heard about bubble sort, but I don't think it's suitable for simultaneous processing.
+   3. Not done yet.
