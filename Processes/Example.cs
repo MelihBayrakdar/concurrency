@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Example
 {
@@ -63,6 +64,26 @@ namespace Example
         public void printIdByName()
         {
             // todo: Implement the body of this method that gets an input for a process name and prints corresponding id
+            this.localProcsAll = Process.GetProcesses();
+            Console.Write("Enter a process name: ");
+            string Name = Console.ReadLine();
+            int howMany = this.localProcsAll.Where(x => x.ProcessName == Name).Count();
+            Console.WriteLine($"Process {Name} is {howMany} times in your device");
+            foreach (Process process in this.localProcsAll)
+            {
+                try
+                {
+                    if (process.ProcessName == Name)
+                    {
+                        Console.WriteLine($"Process: {process.ProcessName}, ID: {process.Id}");
+                    }
+                }
+                catch (System.Exception)
+                {
+                    throw;
+                }
+            }
+
         }
     }
 }
