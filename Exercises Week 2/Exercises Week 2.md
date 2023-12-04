@@ -43,8 +43,8 @@ After that, modify your program such that executes the **Processes** (try to run
 1.  .
     -	System.Diagnotics is being used for the processes. At some point System.Threading and System.IO is also being used.
     -	The Process class is being used with the methods Start().
-		-	With the class ProcessStartInfo we can modify parts of the process properties.
-		-	There is a method called GetProcesses() in the Process class. Calling this method will get you returned an array.
+	-	With the class ProcessStartInfo we can modify parts of the process properties.
+	-	There is a method called GetProcesses() in the Process class. Calling this method will get you returned an array.
 
 # Exercises
 1.	
