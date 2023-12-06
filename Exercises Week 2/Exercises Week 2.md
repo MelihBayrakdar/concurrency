@@ -47,4 +47,6 @@ After that, modify your program such that executes the **Processes** (try to run
 	-	There is a method called GetProcesses() in the Process class. Calling this method will get you returned an array.
 
 # Exercises
-1.	
+1.	Concurrency > Folder: Processes
+	1.	[This code snippet](processterminate.png) handles the termination of a process by giving the Process Id. It indeed terminates the chosen process.
+	2.	[This code snippet](processprintid.png) prints the process id by taking the name.
