@@ -19,10 +19,11 @@ namespace Exercise
             // Implement your code here
             prInfo.FileName = "open";
             // prInfo.Arguments = "notepad.txt";
-            prInfo.Arguments = "https://www.turkiye.gov.tr";
+            prInfo.Arguments = "../Processes/bin/Debug/net6.0/Processes.dll";
 
+            // This means start the process in a new window
+            prInfo.CreateNoWindow = false;
 
-            prInfo.CreateNoWindow = false; // This means start the process in a new window
             prInfo.UseShellExecute = false;
 
             try
