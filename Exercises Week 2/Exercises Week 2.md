@@ -53,6 +53,8 @@ After that, modify your program such that executes the **Processes** (try to run
 
 2. 	[This code snippet](processcreation.png) creates a new process and opens an executable file.
 	I cannot run the Processes.dll file with the ProcessStartInfo object. Directly running the dll file via the terminal by typing 'dotnet /Users/melihbayrakdar/Documents/GitHub/concurrency/Processes/bin/Debug/net6.0/Processes.dll', it runs and apparently running the dll file just makes the Program.cs run. I will ask the teacher about running the Processes.dll file through the object.
+	After asking the teacher, he pointed out that macOS users have the executable file without the .dll extension. 
+	The Arguments property is changed to prInfo.Arguments = "../Processes/bin/Debug/net6.0/Processes"; The code works and by running the code it brings me to the running file of ProcessCreation.
 
 3.	concurrency > Folder: IPCNamedClient & IPCNamedServer
 	1. 	You basically type something in the server client and the other client will take the message and print it out in reverse order.
@@ -61,4 +63,4 @@ After that, modify your program such that executes the **Processes** (try to run
 		Client output after running: 	"Pipe Client is being executed ...
 										[Client] waiting to receive a message"
 	3.	No, it only interacts with one client, the one you start at first will be interacted with. The second client does not interact with the server.
-	
+
