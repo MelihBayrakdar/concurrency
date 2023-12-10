@@ -63,4 +63,8 @@ After that, modify your program such that executes the **Processes** (try to run
 		Client output after running: 	"Pipe Client is being executed ...
 										[Client] waiting to receive a message"
 	3.	No, it only interacts with one client, the one you start at first will be interacted with. The second client does not interact with the server.
+	4. 	Changing the name of the pipe will not result in communication between the server and the client. 
+	5.	[Client code](client.png) and [server code](server.png). Added reader and writer to both codes. I saved the reversed message in a variable and flushed it afterwards. Then I read the input and print the received variable.
+
+4. See the following code: [Client code](pathclient.png) and [server code](pathserver.png).
 

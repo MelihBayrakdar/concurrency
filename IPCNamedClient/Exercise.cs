@@ -16,6 +16,7 @@ namespace Exercise
             server.WaitForConnection();
 
             StreamReader reader = new StreamReader(server);
+            StreamWriter writer = new StreamWriter(server);
 
             while (true)
             {
@@ -25,7 +26,12 @@ namespace Exercise
                 else
                 {
                     Console.WriteLine(msg); // Print the message received
-                    Console.WriteLine(String.Join("", msg.Reverse())); // Print the reverse of the received message
+                    String reversedMsg = String.Join("", msg.Reverse()); // Reverse the received message
+                    Console.WriteLine(reversedMsg); // Print the reversed message
+
+                    // Write the reversed message back to the server
+                    writer.WriteLine(reversedMsg);
+                    writer.Flush();
 
                 }
             }

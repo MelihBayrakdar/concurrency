@@ -8,7 +8,7 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            new IPCNamedClient().ipcClientCommunicate();
+            new IPCNamedClient2().ipcClientCommunicate2();
 
              //SolutionIPCNamedClient client = new SolutionIPCNamedClient("MessageReversePipe");
              //client.prepareClient();

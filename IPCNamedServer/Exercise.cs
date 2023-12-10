@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.IO.Pipes;
+using System.Linq;
 
 namespace Exercise
 {
@@ -16,6 +17,7 @@ namespace Exercise
             client.Connect();
 
             StreamWriter writer = new StreamWriter(client);
+            StreamReader reader = new StreamReader(client);
 
             while (true)
             {
@@ -26,8 +28,12 @@ namespace Exercise
                 {
                     writer.WriteLine(input);
                     writer.Flush();
+
+                    String reversedMessage = reader.ReadLine();
+                    Console.WriteLine("Reversed Message: " + reversedMessage);
                 }
             }
+        
         }
     }
 }
