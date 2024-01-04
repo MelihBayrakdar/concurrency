@@ -74,4 +74,18 @@ The main objectives are to understand and apply concepts of multithreading. This
         4: move to variable A value to register A
         5: add variable B value to register A
         6: move register A value to variable C
-    2.  
+    2.  .
+      1. Thread 1: LOAD A, Thread 1: LOAD B, Thread 1: ADD, Thread 2: LOAD C, Thread 2: LOAD D, Thread 2: ADD
+         Thread 1: LOAD A, Thread 2: LOAD C, Thread 1: LOAD B, Thread 2: LOAD D, Thread 1: ADD, Thread 2: ADD
+         Thread 2: LOAD C, Thread 1: LOAD A, Thread 2: LOAD D, Thread 1: LOAD B, Thread 1: ADD, Thread 2: ADD
+      2. Thread 1: LOAD A, Thread 2: LOAD C, Thread 1: ADD, Thread 2: LOAD D, Thread 2: ADD, Thread 1: LOAD B
+         Thread 1: LOAD A, Thread 2: LOAD C, Thread 2: LOAD D, Thread 1: ADD, Thread 2: ADD, Thread 1: LOAD B
+         Thread 2: LOAD C, Thread 1: LOAD A, Thread 2: LOAD D, Thread 1: ADD, Thread 1: LOAD B, Thread 2: ADD
+
+2. .
+	1. .
+		1. Runned the code.
+      2. By going into process.Threads, you can extract the threads of a process. In this case it's the 'proc' variable's Threads object. 
+   2. .
+      1. Runned the code. 
+      2. By running the Examples class and then running runExample().

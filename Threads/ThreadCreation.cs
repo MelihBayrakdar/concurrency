@@ -10,7 +10,7 @@ namespace Exercise
     {
         private static void printCounts()
         {
-            int c = 0, limit = 1000;
+            int c = 0, limit = 100;
             for (c = 0; c < limit; c++)
                 Console.Write("{0},", c);
         }
@@ -111,10 +111,10 @@ namespace Exercise
 
             // todo 2.1: uncomment (only one at the time) the following statements to see the behaviour of the program
 
-            //this.createOneThread();
+            this.createOneThread();
 
-            this.createTwoXYThreads();
-            //this.createMultipleThreads();
+            // this.createTwoXYThreads();
+            // this.createMultipleThreads();
         }
     }
 }
