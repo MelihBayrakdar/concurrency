@@ -89,3 +89,9 @@ The main objectives are to understand and apply concepts of multithreading. This
    2. .
       1. Runned the code. 
       2. By running the Examples class and then running runExample().
+      3. After creating a Thread object, you can specify its task within the parameters.
+         Example: Thread tOne = new Thread(() => { for (int i = 0; i < 10000; i++) Console.Write("X"); });
+         Or: Thread tOne = new Thread(printCounts);
+      4. By calling `this.createMultipleThreads();` in `runExample()`.
+   3. .
+      1. 
