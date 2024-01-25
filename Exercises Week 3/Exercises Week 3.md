@@ -94,4 +94,15 @@ The main objectives are to understand and apply concepts of multithreading. This
          Or: Thread tOne = new Thread(printCounts);
       4. By calling `this.createMultipleThreads();` in `runExample()`.
    3. .
-      1. 
+      1. Runned the code. 2 threads are being created by calling the countUntil() method. 
+      2. Both ways include a method to decide the task of the threads. The threads of ThreadsJoin use the Join method to join the threads to the main thread. The ThreadCreation doesn't do that.
+      3. The first thread is finishing first with his task. The second thread will then start doing his tasks. So A1 until A10 is being printed first, then B1 until B10.
+
+3. .
+   1. The sequential version takes approximately 11476 miliseconds.
+   2. I think just dividing the maximum by 2 and giving the two portions to each thread.
+   3. Done.
+   4. It is more efficient. The concurrent version only took 6008 miliseconds.
+
+4. .
+   1. 

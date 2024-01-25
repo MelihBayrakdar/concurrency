@@ -19,6 +19,21 @@ namespace Concurrent
         public void runConcurrent(int m, int M)
         {
             // Todo 1: Create two threads, define their segments and start them. Join them all to have all the work done.
+            
+            Thread minimum = new Thread(() => PrimeNumbers.printPrimes(m, M/2));
+            Thread maximum = new Thread(() => PrimeNumbers.printPrimes(M/2, M));
+            
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
+            minimum.Start();
+            maximum.Start();
+            minimum.Join();
+            maximum.Join();
+            
+            sw.Stop();
+            Console.WriteLine("Time for concurrent version is {0} msec,", sw.ElapsedMilliseconds);
+
         }
 
     }

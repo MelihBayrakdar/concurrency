@@ -71,13 +71,14 @@ namespace Exercise
 
             /// We start both threads here.
             t_A.Start();
-            t_B.Start();
+            // t_B.Start();
 
             // wait for a short period
-            Thread.Sleep(WT);
+            // Thread.Sleep(WT);
 
             /// The main thread waits here for both threads to join.
             t_A.Join();
+            t_B.Start();
             t_B.Join();
 
             Console.WriteLine("Both counter threads joined to the main thread.");

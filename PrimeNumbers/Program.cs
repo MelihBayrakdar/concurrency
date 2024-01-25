@@ -22,9 +22,11 @@ namespace Program
             pn.runSequential(min, max);
 
             Thread.Sleep(5000);
-
+            // Stopwatch sw = new Stopwatch();
+            // sw.Start();
             pn.runConcurrent(min, max);
-
+            // sw.Stop(); 
+            // Console.WriteLine("Time for concurrent version is {0} msec,", sw.ElapsedMilliseconds);
 
         }
     }
